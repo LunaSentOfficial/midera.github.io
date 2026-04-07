@@ -39,6 +39,7 @@ div#container {
 }
 
 div#content {
+
     text-align: center;
 }
 
@@ -46,6 +47,7 @@ div.platforms {
 }
 
     div.platforms h2 {
+
         text-align: center;
     }
 
@@ -72,7 +74,7 @@ ul.menu {
     }
 
     ul.menu a {
-        color: rgb(63,60,62);
+        color: #d39e5a;
     }
 
 table {
@@ -82,3 +84,103 @@ table {
     margin: 0;
     font-size: 20px;
 }
+.sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ba7939;
+    overflow-x: hidden;
+    transition: 0.25s;
+    padding-top: 60px;
+}
+
+    .sidepanel a {
+        padding: 12px 25px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #403d3e;
+        display: block;
+        transition: 0.2s;
+        font-weight: bold;
+        text-align: left;
+    }
+        .sidepanel a:hover {
+            background: #ce9c5a;
+        }
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.openbtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+}
+
+h3 {
+    color: #403d3e;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 450px;
+    font-size: 20px;
+}
+
+.tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 45px;
+    gap: 15px;
+    transition: 0.3s ease;
+}
+
+.card {
+    background: #403d3e;
+    width: 250px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+        width: 220px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+.show_tool-btn {
+    background: #ba7939;
+    font-weight: bold;
+    color: #403d3e;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+    .show_tool-btn:hover {
+        opacity: 0.9;
+    }

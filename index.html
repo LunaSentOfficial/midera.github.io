@@ -1,25 +1,60 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MidEra - Website (Under Construction)</title>
-    <link rel="stylesheet" href="styles/style_uc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MidEra - Under Maintenance</title>
+
+    <!--
+        This page is intentionally self-contained (no external CSS/JS/fonts).
+        It's shown by the server whenever MAINTENANCE_MODE is true, so it
+        can't depend on anything that update might be in the middle of
+        breaking.
+    -->
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, #1d0042, #111011, #1d0042, #111011, #1d0042);
+            background-size: 400% 400%;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: helvetica, arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            width: 512px;
+            max-width: calc(100% - 64px);
+            padding: 40px;
+            background: rgba(100, 100, 100, 0.15);
+            box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3), 0 8px 32px 0 #150035;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 32px;
+            border: 1px solid rgba(150, 150, 150, 0.25);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0 0 12px 0;
+        }
+
+        p {
+            font-size: 16px;
+            color: #d8d8d8;
+            margin: 0;
+        }
+    </style>
 </head>
-
 <body>
-
-    <p>
-        <img src="images/logo.png" width="512" height="207" alt="MidEra Logo" />
-    </p>
-
-    <h1><strong>ATTENTION!</strong></h1>
-
-    <p2>
-        <img src="images/gifs/warning_sign.png" width="256" height="256" alt="Warning Sign" />
-    </p2>
-
-    <h2>This Website is Currently Under Construction, Come Back Later!</h2>
-
+    <div class="content">
+        <h1>Be Back Soon!</h1>
+        <p>MidEra's Website is currently undergoing maintenance, please check back shortly!</p>
+    </div>
 </body>
-
 </html>
